@@ -23,7 +23,7 @@ public class DatabaseTemplateResolver extends StringTemplateResolver {
         this.templateRepository = templateRepository;
         this.setResolvablePatterns(Collections.singleton("db-*"));
         this.setCacheTTLMs(5 * 60 * 1000L);
-        this.setCacheable(false);
+        this.setCacheable(true);
     }
 
     @Override
